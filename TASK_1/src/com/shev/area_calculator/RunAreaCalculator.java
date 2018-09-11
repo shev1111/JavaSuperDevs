@@ -16,6 +16,7 @@ public class RunAreaCalculator {
 		shapes[2] = square;
 		for(Shape shape:shapes) {
 			shape.getArea();
+			System.out.println("Test finished");
 		}
 		
 
