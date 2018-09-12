@@ -2,6 +2,6 @@ package com.shev.area_calculator.parent_shape;
 
 public interface Shape {
 
-	void getArea();
+	int getArea();
 
 }
