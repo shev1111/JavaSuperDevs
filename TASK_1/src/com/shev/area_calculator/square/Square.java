@@ -13,11 +13,7 @@ public class Square extends AbstractShape{
 
 	@Override
 	public int getArea() {
-			int area;
-			area = a*b;
-			return  area;
-
-
+		return  a*b;
 	}
 
 }
