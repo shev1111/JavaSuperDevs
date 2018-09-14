@@ -16,4 +16,12 @@ public class Square extends AbstractShape{
 		return  a*b;
 	}
 
+	public int getA() {
+		return a;
+	}
+
+	public int getB() {
+		return b;
+	}
 }
+
