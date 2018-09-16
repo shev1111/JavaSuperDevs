@@ -4,11 +4,10 @@ import com.shev.area_calculator.circle.Circle;
 import com.shev.area_calculator.parent_shape.Shape;
 import com.shev.area_calculator.square.Square;
 import com.shev.area_calculator.triangle.Triangle;
-
 import java.util.logging.Logger;
 
 public class MainShape {
-    private static Logger logger = Logger.getLogger(MainShape.class.getName());
+    private static Logger logger = Logger.getLogger(Shape.class.getSimpleName());
     public static void main(String[] args) {
 
         Shape[] shapes = new Shape[3];
@@ -19,7 +18,7 @@ public class MainShape {
         Square square = new Square(2, 3);
         shapes[2] = square;
         for(Shape shape:shapes) {
-            logger.info(shape.getClass()+" area = "+String.valueOf(shape.getArea()));
+            logger.info(shape.getClass()+" Area = "+String.valueOf(shape.getArea()+"\n"));
         }
 
     }

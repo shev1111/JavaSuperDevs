@@ -4,8 +4,7 @@ import com.shev.area_calculator.parent_shape.AbstractShape;
 public class Circle extends AbstractShape{
 
 	private int radius;
-	private final double PI = Math.PI;
-	
+	private final double PI = 3;
 	public Circle(Integer radius) {
 		this.radius = radius;
 	}
