@@ -1,7 +1,7 @@
 package com.shev.area_calculator.square;
 import com.shev.area_calculator.parent_shape.AbstractShape;
 
-public class Square extends AbstractShape{
+public class Square extends AbstractShape {
 
 	private int a;
 	private int b;
@@ -13,15 +13,7 @@ public class Square extends AbstractShape{
 
 	@Override
 	public int getArea() {
-		return  a*b;
-	}
-
-	public int getA() {
-		return a;
-	}
-
-	public int getB() {
-		return b;
+		return a * b;
 	}
 }
 

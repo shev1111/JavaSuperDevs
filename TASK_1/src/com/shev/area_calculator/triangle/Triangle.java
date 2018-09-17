@@ -12,15 +12,14 @@ public class Triangle extends AbstractShape{
 		this.c = c;
 		
 	}
-	
+
 	@Override
 	public int getArea() {
 		int semiPerimeter = (a+b+c)/2;
 		double area = Math.sqrt(semiPerimeter*(semiPerimeter-a)*(semiPerimeter-b)*(semiPerimeter-c));
-		return ((int) area);
+		if (Double.isNaN(area)){
+			return 1;
+		}
+		return ((int) Math.round(area));
 	}
-
-
-	
-
 }
